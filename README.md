@@ -4,23 +4,20 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
-## Code scaffolding
+In module.ts:
+```ts
+import {CookieServiceModule} from '@attus/cookie-service';
 
-Run `ng generate component component-name --project cookie-service` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project cookie-service`.
-> Note: Don't forget to add `--project cookie-service` or else it will be added to the default project in your `angular.json` file. 
+imports: [
+  CookieServiceModule,
+],
+```
 
-## Build
+In component.ts:
+```ts
+import {CookieServiceService} from '@attus/cookie-service';
 
-Run `ng build cookie-service` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build cookie-service`, go to the dist folder `cd dist/cookie-service` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test cookie-service` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+const a: string = this.cookieService.get(cookie_name);
+this.cookieService.set(cookie_name, cookie_value);
+this.cookieService.delete(cookie_name);
+```

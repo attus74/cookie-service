@@ -3,5 +3,5 @@
  */
 
 export * from './lib/cookie-service.service';
-export * from './lib/cookie-service.component';
 export * from './lib/cookie-service.module';
+export * from './lib/cookie-token-service.service';
