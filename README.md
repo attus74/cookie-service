@@ -1,5 +1,7 @@
 # CookieService
 
+[![GitHub release](https://img.shields.io/github/release/attus74/cookie-service.svg)](https://GitHub.com/attus74/cookie-service/releases/)
+
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
 ## Code scaffolding
