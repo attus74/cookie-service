@@ -1,11 +1,28 @@
 {
   "name": "@attus/cookie-service",
-  "version": "0.0.1",
+  "version": "11.0.0",
   "peerDependencies": {
-    "@angular/common": "^10.2.0",
-    "@angular/core": "^10.2.0"
+    "@angular/common": "^11.0.0",
+    "@angular/core": "^11.0.0"
   },
   "dependencies": {
     "tslib": "^2.0.0"
+  },
+  "keywords": [
+    "Angular",
+    "Cookie"
+  ],
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/attus74/cookie-service",
+  "bugs": {
+    "url": "https://github.com/attus74/cookie-service/issues"
+  },
+  "author": {
+    "name": "Attila Németh",
+    "url": "https://github.com/attus74"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/attus74/cookie-service.git"
   }
 }
