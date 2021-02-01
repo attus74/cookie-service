@@ -6,6 +6,8 @@ import { CookieServiceService } from './cookie-service.service';
 })
 export class CookieTokenServiceService {
 
+  private   tokenName: string = 'api_refresh_token';
+
   constructor(private cookieService: CookieServiceService) { }
 
   /**
@@ -13,7 +15,7 @@ export class CookieTokenServiceService {
    */
   getRefreshToken(): Promise<string> {
     return new Promise((resolve, reject) => {
-      const cookie: string = this.cookieService.get('drupal_refresh_token');
+      const cookie: string = this.cookieService.get(this.tokenName);
       if (cookie === undefined) {
         reject();
       }
@@ -28,9 +30,9 @@ export class CookieTokenServiceService {
    * @param token
    */
   setRefreshToken(token: string): Promise<any> {
-    return new Promise((resolve, reject) => {
-      this.cookieService.set('drupal_refresh_token', token);
-      resolve();
+    return new Promise((resolve) => {
+      this.cookieService.set(this.tokenName, token);
+      resolve(null);
     });
   }
 
@@ -38,8 +40,8 @@ export class CookieTokenServiceService {
    * Delete the Refresh Token
    */
   deleteRefreshToken(): Promise<any> {
-    return new Promise((resolve, reject) => {
-      this.cookieService.delete('drupal_refresh_token');
+    return new Promise(() => {
+      this.cookieService.delete(this.tokenName);
     });
   }
 
