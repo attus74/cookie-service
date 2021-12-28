@@ -1,6 +1,11 @@
 # CookieService
 
 [![GitHub release](https://img.shields.io/github/release/attus74/cookie-service.svg)](https://GitHub.com/attus74/cookie-service/releases/)
+[![GitHub release](https://img.shields.io/github/release/attus74/cookie-service.svg)](https://GitHub.com/attus74/cookie-service/releases/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/attus74/cookie-service/graphs/commit-activity)
+[![Npm package version](https://badgen.net/npm/v/@attus/cookie-service)](https://npmjs.com/package/@attus/cookie-service)
+[![Npm package license](https://badgen.net/npm/license/@attus/cookie-service)](https://npmjs.com/package/@attus/cookie-service)
+[![GitHub issues](https://img.shields.io/github/issues/attus74/cookie-service.svg)](https://GitHub.com/attus74/cookie-service/issues/)
 
 Yes, I know, the services have weird names. I don't want to change them, in order to maintain compatibility.
 
