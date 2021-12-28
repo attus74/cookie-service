@@ -1,7 +1,6 @@
 # CookieService
 
 [![GitHub release](https://img.shields.io/github/release/attus74/cookie-service.svg)](https://GitHub.com/attus74/cookie-service/releases/)
-[![GitHub release](https://img.shields.io/github/release/attus74/cookie-service.svg)](https://GitHub.com/attus74/cookie-service/releases/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/attus74/cookie-service/graphs/commit-activity)
 [![Npm package version](https://badgen.net/npm/v/@attus/cookie-service)](https://npmjs.com/package/@attus/cookie-service)
 [![Npm package license](https://badgen.net/npm/license/@attus/cookie-service)](https://npmjs.com/package/@attus/cookie-service)
@@ -41,7 +40,7 @@ import { CookieTokenServiceService } from '@attus/cookie-service';
   providers: [
     {
       provide: 'ANGULAR_CLIENT_TOKEN_SERVICE',
-      useClass: CookieTokenServiceService,
+      **useClass: CookieTokenServiceService,**
     },
     {
       provide: 'ANGULAR_CLIENT_CONFIG',
