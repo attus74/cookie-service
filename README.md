@@ -40,7 +40,7 @@ import { CookieTokenServiceService } from '@attus/cookie-service';
   providers: [
     {
       provide: 'ANGULAR_CLIENT_TOKEN_SERVICE',
-      **useClass: CookieTokenServiceService,**
+      useClass: CookieTokenServiceService,
     },
     {
       provide: 'ANGULAR_CLIENT_CONFIG',
